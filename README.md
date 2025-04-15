@@ -28,4 +28,4 @@ Após o download, salve o arquivo CSV com o nome `creditcard.csv` na raiz do rep
 
 ## Como Executar
 
-O projeto foi originalmente desenvolvido e testado no Google Colab. Se você deseja executá-lo no Colab, basta importar este repositório e garantir que o arquivo `creditcard.csv` esteja disponível na raiz.
+O projeto foi originalmente desenvolvido e testado no Google Colab. Se você deseja executá-lo, basta importar este repositório e garantir que o arquivo `creditcard.csv` esteja disponível na raiz.
