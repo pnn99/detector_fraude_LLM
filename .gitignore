@@ -172,3 +172,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# VS Code settings
+.vscode/
+# VS Code Jupyter Notebook files
+.vscode-notebook-cell:/c%3A/Users/Paulo/Documents/detector_fraude_LLM/detector_de_fraude.ipynb#W2sZmlsZQ%3D%3D
+
+*.csv
