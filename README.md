@@ -1,16 +1,24 @@
 # Detector de Fraude em Transações de Cartão de Crédito
 
-Este repositório contém o código desenvolvido para a detecção de fraudes em transações de cartão de crédito, utilizando técnicas de machine learning, especialmente regressão logística. O projeto foi realizado como trabalho final da disciplina optativa **Tópicos em Novas Tecnologias I**, ministrada pelo professor Carlos Severiano no curso de Sistemas de Informação no IFMG Campus Sabará.
+Este repositório contém o código de um projeto de detecção de fraudes em transações de cartão de crédito, utilizando um pipeline completo de machine learning. O trabalho foi iniciado na disciplina optativa **Tópicos em Novas Tecnologias I** e foi aprofundado e refinado para a disciplina de **Inteligência Artificial**, ministrada pelo professor **Carlos Alexandre** no curso de Sistemas de Informação no IFMG Campus Sabará.
+
+O projeto também serve como base para um **minicurso** sobre o tema, demonstrando um fluxo de trabalho realista, desde a análise básica até a otimização de modelos complexos.
 
 ## Descrição do Projeto
 
-O projeto tem como objetivo aplicar um modelo preditivo para identificar transações fraudulentas. Para isso, foram empregadas as seguintes etapas:
+O projeto tem como objetivo aplicar e comparar múltiplos modelos preditivos para identificar transações fraudulentas. Para isso, foram empregadas as seguintes etapas:
 
-- **Análise Exploratória:** Inspeção dos dados, verificação de tipos e identificação de dados nulos.
-- **Balanceamento de Dados:** Uso de undersampling para balancear a classe majoritária e minoritária, combatendo o desbalanceamento típico em bases de dados de fraudes.
-- **Divisão dos Dados:** Separação do dataset em dados de treinamento, teste e validação.
-- **Treinamento do Modelo:** Utilização da regressão logística para construir o modelo preditivo.
-- **Avaliação e Validação:** Cálculo de métricas de desempenho (como acurácia) e criação de um dataframe para comparar os resultados das predições com os valores reais.
+- **Análise Exploratória:** Inspeção dos dados, verificação de tipos e identificação do forte desbalanceamento entre as classes.
+- **Balanceamento de Dados:** Uso da técnica de *undersampling* para criar um dataset balanceado e justo para o treinamento dos modelos.
+- **Aplicação de Múltiplos Algoritmos:** Foram testados e comparados diversos modelos de classificação, incluindo:
+    - Regressão Logística (como linha de base obrigatória)
+    - Árvore de Decisão
+    - Support Vector Machine (SVM)
+    - Random Forest
+    - Gradient Boosting
+- **Ensemble Learning:** Implementação de um modelo `StackingClassifier` como método exclusivo, combinando as predições dos algoritmos de base.
+- **Otimização de Hiperparâmetros:** Uso de `GridSearchCV` para encontrar as melhores configurações para os modelos de base, buscando maximizar a performance.
+- **Avaliação Completa e Visualização:** Análise de performance com métricas como acurácia, F1-score e **Matriz de Confusão**. Foram gerados gráficos para comparar os modelos ("antes e depois" da otimização) e interpretar a importância das features.
 
 ## Dependências
 
@@ -19,6 +27,8 @@ O projeto foi desenvolvido em Python e utiliza as seguintes bibliotecas:
 - [Pandas](https://pandas.pydata.org/)
 - [NumPy](https://numpy.org/)
 - [scikit-learn](https://scikit-learn.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [Seaborn](https://seaborn.pydata.org/)
 
 ## Base de Dados
 
