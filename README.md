@@ -35,7 +35,3 @@ O projeto foi desenvolvido em Python e utiliza as seguintes bibliotecas:
 A base de dados utilizada para este projeto deve ser baixada separadamente. Você pode baixá-la neste [link](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?resource=download).
 
 Após o download, salve o arquivo CSV com o nome `creditcard.csv` na raiz do repositório para que o script possa carregá-lo corretamente.
-
-## Como Executar
-
-O projeto foi originalmente desenvolvido e testado no Google Colab. Se você deseja executá-lo, basta importar este repositório e garantir que o arquivo `creditcard.csv` esteja disponível na raiz.
