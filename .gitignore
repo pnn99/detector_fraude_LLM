@@ -179,3 +179,4 @@ cython_debug/
 
 *.csv
 *.png
+*detector_de_fraude_clean.ipynb
